@@ -1,6 +1,5 @@
 class AppHeader extends HTMLElement {
   connectedCallback() {
-    /* Inside header.js */
     this.innerHTML = `
   <header>
     <div class="header-content">
@@ -29,11 +28,11 @@ class AppHeader extends HTMLElement {
   <div class="mobile-nav" id="mobileNav">
     <button class="close-menu" id="closeBtn">×</button>
     <a href="index.html">Home</a>
-    <a href="main.html#products">Collection</a>
-    <a href="brand.html">Brands</a>
-    <a href="main.html#features">Why Us</a>
+    <a href="index.html#products">Collection</a>
+    <a href="#brands">Brands</a>
+    <a href="index.html#features">Why Us</a>
     <a href="#contact">Contact</a>
-    <a href="tel:+1234567890" style="color: var(--gold); margin-top: 20px">Call Now</a>
+    <a href="tel:+919811017918" style="color: var(--gold); margin-top: 20px">Call Now</a>
   </div>
 
   <div class="overlay" id="navOverlay"></div>
@@ -55,7 +54,6 @@ class AppHeader extends HTMLElement {
     closeBtn.addEventListener("click", toggleMenu);
     overlay.addEventListener("click", toggleMenu);
 
-    // Close menu when a link is clicked
     links.forEach((link) => {
       link.addEventListener("click", () => {
         mobileNav.classList.remove("active");
@@ -65,5 +63,4 @@ class AppHeader extends HTMLElement {
   }
 }
 
-// Define the custom tag <app-header>
 customElements.define("app-header", AppHeader);
