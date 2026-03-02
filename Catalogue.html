@@ -175,6 +175,17 @@
         filter: grayscale(0%) opacity(1);
         transform: scale(1.5);
       }
+
+      @media (max-width: 768px) {
+        .fw-brand-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 15px; /* Slightly smaller gap for mobile screens */
+        }
+
+        .fw-brand-card {
+          padding: 20px 10px; /* Reduced padding so logos fit comfortably */
+        }
+      }
     </style>
   </head>
   <body>
@@ -271,7 +282,11 @@
       </div>
     </section>
 
-    <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank">
+    <a
+      href="https://api.whatsapp.com/send/?phone=919811017918&text&type=phone_number&app_absent=0"
+      class="whatsapp-btn"
+      target="_blank"
+    >
       <svg
         width="35"
         height="35"
