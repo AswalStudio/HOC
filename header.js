@@ -27,11 +27,11 @@ class AppHeader extends HTMLElement {
 
   <div class="mobile-nav" id="mobileNav">
     <button class="close-menu" id="closeBtn">×</button>
-    <a href="index.html">Home</a>
-    <a href="index.html#products">Collection</a>
-    <a href="#brands">Brands</a>
-    <a href="index.html#features">Why Us</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#products" class="nav-link">Collection</a>
+        <a href="index.html#brands" class="nav-link">Brands</a> 
+        <a href="index.html#features" class="nav-link">Why Us</a>
+        <a href="#contact" class="nav-link">Contact</a>
     <a href="tel:+919811017918" style="color: var(--gold); margin-top: 20px">Call Now</a>
   </div>
 
