@@ -101,6 +101,39 @@
         font-size: 0.85rem;
         letter-spacing: 1px;
       }
+
+      .brand-video-section {
+  padding: 80px 5%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.video-container {
+  /* For vertical video, a width between 300px and 400px is best */
+  max-width: 350px; 
+  margin: 0 auto;
+  
+  /* The standard vertical aspect ratio */
+  aspect-ratio: 9 / 16; 
+  
+  border: 1px solid #d4af37;
+  border-radius: 12px; /* Rounded corners look better for vertical video */
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.brand-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+/* Optional: Make the video slightly smaller on mobile */
+@media (max-width: 768px) {
+  .brand-video-section {
+    padding: 40px 20px;
+  }
+}
     </style>
   </head>
   <body>
@@ -210,6 +243,25 @@
         ></iframe>
       </div>
     </div>
+
+
+    <section class="brand-video-section">
+  <div class="section-header">
+    <h3>The Art of Air</h3>
+    <p>Experience the silent elegance and craftsmanship in motion.</p>
+  </div>
+  
+  <div class="video-container">
+    <video 
+      controls 
+      poster="images/the fan studio.avif" 
+      preload="lazy"
+      class="brand-video">
+      <source src="video/the_fan_studio.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
 
     <section class="fw-section fw-bg-light">
       <h2 class="fw-section-title">The fan studio Catalogues</h2>
