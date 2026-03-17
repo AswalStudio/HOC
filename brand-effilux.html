@@ -122,56 +122,56 @@
         letter-spacing: 1px;
       }
       .video-spotlight-section {
-  padding: 60px 20px;
-  background-color: #f9f9f9; /* Light contrast like your fw-bg-light */
-  text-align: center;
-}
+        padding: 60px 20px;
+        background-color: #f9f9f9; /* Light contrast like your fw-bg-light */
+        text-align: center;
+      }
 
-.vertical-video-wrapper {
-  max-width: 380px; /* Limits size on desktop */
-  margin: 0 auto;
-  aspect-ratio: 9 / 16; /* Maintains vertical shape */
-  border: 1px solid #d4af37; /* Your gold brand color */
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-  background: #000;
-}
+      .vertical-video-wrapper {
+        max-width: 380px; /* Limits size on desktop */
+        margin: 0 auto;
+        aspect-ratio: 9 / 16; /* Maintains vertical shape */
+        border: 1px solid #d4af37; /* Your gold brand color */
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        background: #000;
+      }
 
-/* Updated container for side-by-side videos */
-.video-spotlight-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Space between videos */
-  flex-wrap: wrap; /* Stacks them on small mobile screens */
-  max-width: 1000px;
-  margin: 0 auto;
-}
+      /* Updated container for side-by-side videos */
+      .video-spotlight-grid {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Space between videos */
+        flex-wrap: wrap; /* Stacks them on small mobile screens */
+        max-width: 1000px;
+        margin: 0 auto;
+      }
 
-.vertical-video-card {
-  flex: 1;
-  max-width: 320px; /* Slimmer for side-by-side view */
-  aspect-ratio: 9 / 16;
-  border: 1px solid #d4af37;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  background: #000;
-}
+      .vertical-video-card {
+        flex: 1;
+        max-width: 320px; /* Slimmer for side-by-side view */
+        aspect-ratio: 9 / 16;
+        border: 1px solid #d4af37;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        background: #000;
+      }
 
-.spotlight-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+      .spotlight-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
 
-/* Mobile tweak to ensure it doesn't hit screen edges */
-@media (max-width: 480px) {
-  .vertical-video-wrapper {
-    max-width: 90%;
-  }
-}
+      /* Mobile tweak to ensure it doesn't hit screen edges */
+      @media (max-width: 480px) {
+        .vertical-video-wrapper {
+          max-width: 90%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -348,27 +348,46 @@
       </div>
     </div>
 
-<section class="video-spotlight-section">
-  <div class="section-header">
-    <h3>Collection in Motion</h3>
-    <p>A closer look at Effilux craftsmanship.</p>
-  </div>
+    <section class="video-spotlight-section">
+      <div class="section-header">
+        <h3>Collection in Motion</h3>
+        <p>A closer look at Effilux craftsmanship.</p>
+      </div>
 
-  <div class="video-spotlight-grid">
-    <div class="vertical-video-card">
-      <video controls loop muted playsinline poster="images/effilux.png" class="spotlight-video">
-        <source src="Led Lighting Brand Category/Led Lighting Video.mp4" type="video/mp4">
-      </video>
-    </div>
+      <div class="video-spotlight-grid">
+        <div class="vertical-video-card">
+          <video
+            controls
+            loop
+            muted
+            playsinline
+            poster="images/effilux.png"
+            class="spotlight-video"
+          >
+            <source
+              src="Led Lighting Brand Category/Led Lighting Video.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
 
-    <div class="vertical-video-card">
-      <video controls loop muted playsinline poster="images/effilux.png" class="spotlight-video">
-        <source src="Led Lighting Brand Category/Led Lighting Video 2.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-</section>
-
+        <div class="vertical-video-card">
+          <video
+            controls
+            loop
+            muted
+            playsinline
+            poster="images/effilux.png"
+            class="spotlight-video"
+          >
+            <source
+              src="Led Lighting Brand Category/Led Lighting Video 2.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </section>
 
     <section class="fw-section fw-bg-light">
       <h2 class="fw-section-title">Effilux Catalogues</h2>
@@ -394,7 +413,7 @@
       <div class="pdf-list">
         <div class="pdf-item">
           <div class="pdf-toolbar">
-            <h4>effilux Air Purifiers (Corporate)</h4>
+            <h4>effilux</h4>
             <a
               href="New folder/Effilux Catalogue Dt. 19-04-2025.pdf"
               download
